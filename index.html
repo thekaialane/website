@@ -20,7 +20,7 @@ home: true
                 </div>
             </a>
 
-            <img src="{{ post.thumb }}" class="post-list-thumb" />
+            {% if post.thumb %}<img src="{{ post.thumb }}" class="post-list-thumb" />{% endif %}
         </li>
         {% endfor %}
     </ul>
